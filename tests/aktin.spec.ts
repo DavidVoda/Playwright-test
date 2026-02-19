@@ -47,10 +47,4 @@ test('Remove specific product from shopping cart', async ({ page }) => {
 
     await expect(emptyShoppingCart).toBeVisible()
     await expect(emptyShoppingCart).toContainText("Košík je prázdný")
-
-    //await expect(async () => {
-    //    await cartButton.click();
-    //    await expect(cartQuantity).toHaveValue('1');
-    //}).toPass({ timeout: 10000 });
-
 });
